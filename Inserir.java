@@ -1,2 +1,13 @@
-429: Too Many Requests
-For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).
+
+import java.util.Scanner;
+
+public class Inserir {
+
+    public Inserir() {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite o nome a incluir: ");
+        String nome = input.nextLine();
+        input.close();
+        new Conexao().inserir(nome);
+    }
+}
